@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A21F3FF"
+    tools:context=".ui.login.FriendsActivity">
+
+    <TextView
+        android:id="@+id/tv_friendsList"
+        android:layout_width="355dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Liste des ami(e)s"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="390dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="11dp"
+        android:queryHint="Chercher par nom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_friendsList" />
+
+    <ImageView
+        android:id="@+id/profPic1"
+        android:layout_width="104dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:srcCompat="@drawable/ic_profile" />
+
+    <TextView
+        android:id="@+id/tv_name1"
+        android:layout_width="57dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:text="Nom1"
+        app:layout_constraintStart_toEndOf="@+id/profPic1"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <TextView
+        android:id="@+id/tv_descr1"
+        android:layout_width="161dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="8dp"
+        android:text="J'aime l'info"
+        app:layout_constraintStart_toEndOf="@+id/profPic1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name1" />
+
+    <Button
+        android:id="@+id/b_profile1"
+        android:layout_width="97dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="75dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="Profile"
+        android:textColor="#03A9F4"
+        app:layout_constraintStart_toEndOf="@+id/profPic1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descr1"
+        app:rippleColor="#03A9F4"
+        app:strokeColor="#03A9F4" />
+
+    <Button
+        android:id="@+id/b_message1"
+        android:layout_width="112dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="Message"
+        android:textColor="#03A9F4"
+        app:layout_constraintStart_toEndOf="@+id/b_profile1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descr1"
+        app:rippleColor="#03A9F4"
+        app:strokeColor="#03A9F4" />
+
+
+    <ImageView
+        android:id="@+id/profPic2"
+        android:layout_width="104dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profPic1"
+        app:srcCompat="@drawable/ic_profile" />
+
+    <TextView
+        android:id="@+id/tv_name2"
+        android:layout_width="57dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:text="Nom2"
+        app:layout_constraintStart_toEndOf="@+id/profPic2"
+        app:layout_constraintTop_toBottomOf="@+id/profPic1" />
+
+    <TextView
+        android:id="@+id/tv_descr2"
+        android:layout_width="161dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="8dp"
+        android:text="J'aime les maths"
+        app:layout_constraintStart_toEndOf="@+id/profPic2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name2" />
+
+    <Button
+        android:id="@+id/b_profile2"
+        android:layout_width="97dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="75dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="Profile"
+        android:textColor="#03A9F4"
+        app:layout_constraintStart_toEndOf="@+id/profPic2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descr2"
+        app:rippleColor="#03A9F4"
+        app:strokeColor="#03A9F4" />
+
+    <Button
+        android:id="@+id/b_message2"
+        android:layout_width="112dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="Message"
+        android:textColor="#03A9F4"
+        app:layout_constraintStart_toEndOf="@+id/b_profile2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descr2"
+        app:rippleColor="#03A9F4"
+        app:strokeColor="#03A9F4" />
+
+    <ImageView
+        android:id="@+id/profPic3"
+        android:layout_width="104dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profPic2"
+        app:srcCompat="@drawable/ic_profile" />
+
+    <TextView
+        android:id="@+id/tv_name3"
+        android:layout_width="57dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:text="Nom3"
+        app:layout_constraintStart_toEndOf="@+id/profPic3"
+        app:layout_constraintTop_toBottomOf="@+id/profPic2" />
+
+    <TextView
+        android:id="@+id/tv_descr3"
+        android:layout_width="161dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="8dp"
+        android:text="J'aime les maths"
+        app:layout_constraintStart_toEndOf="@+id/profPic3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name3" />
+
+    <Button
+        android:id="@+id/b_profile3"
+        android:layout_width="97dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="75dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="Profile"
+        android:textColor="#03A9F4"
+        app:layout_constraintStart_toEndOf="@+id/profPic3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descr3"
+        app:rippleColor="#03A9F4"
+        app:strokeColor="#03A9F4" />
+
+    <Button
+        android:id="@+id/b_message3"
+        android:layout_width="112dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="Message"
+        android:textColor="#03A9F4"
+        app:layout_constraintStart_toEndOf="@+id/b_profile3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descr3"
+        app:rippleColor="#03A9F4"
+        app:strokeColor="#03A9F4" />
+
+    <Button
+        android:id="@+id/b_ic_friends"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginBottom="32dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#00000000"
+        android:drawableTop="@drawable/ic_friends"
+        android:text="Ami(e)s"
+        android:textColor="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/b_ic_search"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="32dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#00000000"
+        android:drawableTop="@drawable/ic_search"
+        android:text="Recherche"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/b_ic_message"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="276dp"
+        android:layout_marginBottom="32dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#00000000"
+        android:drawableTop="@drawable/ic_message"
+        android:text="Message"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/b_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_friendsList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_account" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="616dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
